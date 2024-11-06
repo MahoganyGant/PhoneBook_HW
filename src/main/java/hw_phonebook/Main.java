@@ -14,6 +14,8 @@ public class Main {
 
         Mikes_Phonebook.addAll("Mom","000-000-0000","267-000-0000","215-111-1111");
 
+        Mikes_Phonebook.add("Mom","777-777-7777");
+
         Mikes_Phonebook.remove("Brenda");
 
         System.out.println(Mikes_Phonebook.getAllContactNames()+"\n");
@@ -28,5 +30,6 @@ public class Main {
 
 //already has a print statement inside
         Mikes_Phonebook.getMap();
+
     }
 }

@@ -30,8 +30,16 @@ public class PhoneBook {
     }
 
     public void addAll(String name, String... phoneNumbers) {
-        phonebook.put(name, Arrays.asList(phoneNumbers));
-    }
+        // Create a list to hold the phone numbers
+        List<String> numbersList = new ArrayList<>();
+
+        // Add each phone number to the list
+        for (String number : phoneNumbers) {
+            numbersList.add(number);
+        }
+        // Put the name and list of numbers into the phonebook
+        phonebook.put(name, numbersList);
+         }
 
     public void remove(String name) {
         phonebook.remove(name);
